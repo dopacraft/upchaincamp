@@ -1,6 +1,7 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("@nomicfoundation/hardhat-chai-matchers");
 require("@nomiclabs/hardhat-ethers");
+require("@nomiclabs/hardhat-etherscan");
 
 // custom task
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
@@ -76,7 +77,7 @@ module.exports = {
         }
       },
       {
-        version: "0.8.6",
+        version: "0.8.9",
       }
     ],
   },
